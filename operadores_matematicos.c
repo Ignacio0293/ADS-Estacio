@@ -49,6 +49,11 @@ printf ("O B é: %d e o A é: %d\n", b,a);
 b = --a;
 printf ("O B é: %d e o A é: %d\n", b,a);
 
+int x = 45, y = 8;
+float conta = (float) x / y;
+printf("A divisão de x por y é: %.2f\n", conta);
+
+
 
 return 0;
 
