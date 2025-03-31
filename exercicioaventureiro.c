@@ -16,7 +16,7 @@ int main (){
     soma = nota1 + nota2 + nota3;
     media = (float) soma/3;
 
-    printf("Essa é a soma: %.2f\n", media);   
+    printf("Essa é a média: %.2f\n", media);   
 
      
 
