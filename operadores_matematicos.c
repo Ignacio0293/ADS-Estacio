@@ -53,6 +53,17 @@ int x = 45, y = 8;
 float conta = (float) x / y;
 printf("A divisão de x por y é: %.2f\n", conta);
 
+int nota1, nota2, nota3;
+int soma = nota1 + nota2 + nota3;
+float media = (float) soma / 3;
+
+printf("Digite a nota 1: \n");
+scanf("%d", nota1);
+printf("Digite a nota 2: \n");
+scanf("%d", nota2);
+printf("Digite a nota 3: \n");
+scanf("%d", nota3);
+
 
 
 return 0;
