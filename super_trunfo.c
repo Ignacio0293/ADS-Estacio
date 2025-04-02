@@ -16,7 +16,7 @@
         float pibpc1, pibpc2;
         //Na primeira parte do desafio, nivel iniciante, eu estava com dificuldade em deixar cada variavel listada para tornar o código mais limpo, a partir de agora consegui deixar mais organizado e de facil entendimento
 
-        printf("Olá, qual seu nome? \n");
+        printf("Olá, qual seu primeiro nome? \n");
         scanf("%s", nome);
 
         //Fiz os questionamentos para preencher cada carta, de maneira sequencial das variáveis. Primeiro da carta 1 e depois da carta 2
