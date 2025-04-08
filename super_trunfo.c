@@ -65,7 +65,7 @@
         superpoder1 = (float)populacao1+area1+pib1+turismo1+pibpc1+(1/densidade1);//formatação do calculo do superpoder, sendo a densidade somada pelo inverso
         superpoder2 = (float)populacao2+area2+pib2+turismo2+pibpc2+(1/densidade2);
 
-        printf("Perfeito, %s, a seguir você pode conferir os dados das duas cartas cadastradas para o nosso Super trunfo. Além disso, também irei calcular os resultados da Densidade populacional, do PIB per capita e o Super Poder:\n", nome);
+        printf("Perfeito, %s, a seguir você pode conferir os dados das duas cartas cadastradas para o nosso Super trunfo. Além disso, também irei calcular os resultados da Densidade populacional, doPIB per capita e o Super Poder:\n", nome);
         printf("\n");
 
         //Exibi o resultado dos cadastros dos dados de cada carta uma após a outra, para facilitar na leitura de dados e visualização e confirmação de que não existe nenhum erro no percurso
@@ -79,7 +79,7 @@
         printf("Quantidade de pontos turísticos: %d\n", turismo1);
         printf ("Densidade populacional: %.2f habitantes por km²\n", densidade1);
         printf("PIB per Capita: %.2f Reais\n",pibpc1);
-        printf ("E o Super Poder da Carta %s é: %.2f\n", codigo1,superpoder1);
+        printf ("E o Super Poder da Carta %S é: %.2f\n", codigo1,superpoder1);
         printf("\n");
 
 
@@ -93,10 +93,10 @@
         printf("Quantidade de pontos turísticos: %d\n", turismo2);
         printf ("Densidade populacional: %.2f habitantes por km²\n", densidade2);
         printf("PIB per Capita: %.2f Reais\n",pibpc2);
-        printf ("E o Super Poder da Carta %s é: %.2f\n", codigo2,superpoder2);
+        printf ("E o Super Poder da Carta %S é: %.2f\n", codigo2,superpoder2);
         printf("\n");
 
-        printf("Comparação de Cartas:\n");//apresentação do resultado do jogo
+        /*printf("Comparação de Cartas:\n");//apresentação do resultado do jogo
         printf("População: Carta 1 venceu: %d\n", populacao1>populacao2);//as comparações foram realizadas dentro do proprio printf para um código mais curto e simples
         printf("Área: Carta 1 venceu: %d\n", area1>area2);
         printf("PIB: Carta 1 venceu: %d\n", pib1>pib2);
@@ -104,6 +104,62 @@
         printf("Densidade Populacional: Carta 1 venceu: %d\n", (1/densidade1)>(1/densidade2));
         printf("PIB per Capita: Carta 1 venceu: %d\n", pibpc1>pibpc2);
         printf("Super Poder: Carta 1 venceu: %d\n", superpoder1>superpoder2);
+        Transformei esse bloco do desafio nivel mestre do tema 1 em comentário, apenas para deixar registrado o processo realizado para comparação simples
+        entre as cartas criadas no jogo, agora irei começar a implementar as tecnicas do tema 2, sendo o primeiro a comparação e exibição dos resultados
+        com base em estrutura de decisão composta*/
+
+        printf("Comparação de Cartas:\n");//apresentação do resultado do jogo
+
+        printf("População:\n");
+            if (populacao1>populacao2){
+                printf("A Carta 1 venceu!\n");
+            }else{
+            printf("A Carta 2 venceu!\n");
+            }
+
+        printf("Área:\n");
+        if (area1>area2){
+                printf("A Carta 1 venceu!\n");
+            }else{
+            printf("A Carta 2 venceu!\n");
+            }
+
+        printf("PIB:\n");
+        if (pib1>pib2){
+                printf("A Carta 1 venceu!\n");
+            }else{
+            printf("A Carta 2 venceu!\n");
+            }
+
+        printf("Pontos Turísticos:\n");
+        if (turismo1>turismo2){
+                printf("A Carta 1 venceu!\n");
+            }else{
+            printf("A Carta 2 venceu!\n");
+            }
+
+        printf("Densidade Populacional:\n");
+        if (densidade1<densidade2){
+                printf("A Carta 1 venceu!\n");
+            }else{
+            printf("A Carta 2 venceu!\n");
+            }
+
+        printf("PIB per Capita:\n");
+        if (pibpc1>pibpc2){
+                printf("A Carta 1 venceu!\n");
+            }else{
+            printf("A Carta 2 venceu!\n");
+            }
+
+        printf("Super Poder:\n");
+        if (superpoder1>superpoder2){
+                printf("A Carta 1 venceu!\n");
+            }else{
+            printf("A Carta 2 venceu!\n");
+            }
+
+
 
 
 
